@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>May tinh</title>
+</head>
+<body>
+<table>
+    <p>Caculator</p>
+    <tr>
+        <th><input type="number" size="10" id="1"></th>
+        <th><input type="number" size="10" id="2"></th>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="Cong()">Cộng</button>
+        </td>
+    </tr>
+    <td>
+        <button onclick="Tru()">Trừ</button>
+    </td>
+    <tr>
+
+        <td>
+            <button onclick="Nhan()">Nhân</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="Chia()">Chia</button>
+        </td>
+    </tr>
+</table>
+<p>Result Division</p>
+<div id="showResult"></div>
+<script>
+    function Cong() {
+        let showResult = document.getElementById('showResult');
+        let a = document.getElementById('1').value;
+        let b = document.getElementById('2').value;
+        a = parseFloat(a)
+        b = parseFloat(b)
+        let total = a + b;
+        console.log("test" +)
+        showResult.innerHTML=`${total}`;
+    }
+
+    function Tru() {
+        let showResult = document.getElementById('showResult');
+        let a = document.getElementById('1').value;
+        let b = document.getElementById('2').value;
+        a = parseFloat(a)
+        b = parseFloat(b)
+        let total = a - b;
+        showResult.innerHTML=`${total}`;
+    }
+    function Nhan() {
+        let showResult= document.getElementById('showResult');
+        let a= document.getElementById('1').value;
+        let b= document.getElementById('2').value;
+        a=parseFloat(a)
+        b=parseFloat(b)
+        let total= a * b;
+        showResult.innerHTML=`${total}`;
+    }
+    function Chia() {
+        let showResult=document.getElementById('showResult');
+        let a=document.getElementById('1').value;
+        let b=document.getElementById('2').value;
+        a=parseFloat(a)
+        b=parseFloat(b)
+        let total=a/b;
+        showResult.innerHTML=`${total}`;
+    }
+</script>
+</body>
+</html>
