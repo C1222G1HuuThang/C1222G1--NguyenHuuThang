@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cước điện thoại</title>
+</head>
+<body>
+<script>
+    let minute= prompt("nhập số phút")
+    let moeny1=(minute*5000);
+    let moeny2=(minute*4000);
+    let moeny3=(minute*3000);
+    let moeny4=(minute*2000);
+    let money5=(minute*1500);
+    if(minute>=50){
+        document.write("Tiền điện thoại tháng này:" + moeny1 + "đồng");
+    }else if(minute>=40){
+        document.write("Tiền điện thoại tháng này:" + moeny2 + "đồng");
+    }else if (minute>=30){
+        document.write("Tiền điện thoại tháng này:" + moeny3 + "đồng");
+    }else if(minute>=20){
+        document.write("Tiền điện thoại tháng này:" + moeny4 + "đồng");
+    }else document.write("Tiền điện thoại tháng này:" + money5 + "đồng");
+</script>
+</body>
+</html>
