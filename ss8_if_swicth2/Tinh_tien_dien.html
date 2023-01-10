@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh giá điện</title>
+</head>
+<body>
+<script>
+    let elec = prompt("nhập chữ điện");
+    let money1 = elec * 1500;
+    let money2 = elec * 2000;
+    let money3 = elec * 2500;
+    let money4 = elec * 3000;
+    let money5 = elec * 4000;
+    if (elec > 0 && elec < 50) {
+        document.write("Tiền điện tháng này là:" + money1);
+    } else if (elec > 51 && elec < 100) {
+        document.write("Tiền điện tháng này là:" + money2);
+    } else if (elec > 101 && elec < 200) {
+        document.write("Tiền điện tháng này là:" + money3);
+    } else if (elec > 201 && elec < 300) {
+        document.write("Tiền điện tháng này là:" + money4);
+    } else if (elec > 301) {
+        document.write("Tiền điện tháng này là:" + money5);
+    } else document.write("errol");
+</script>
+</body>
+</html>

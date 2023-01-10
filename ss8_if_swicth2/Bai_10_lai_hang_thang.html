@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sendmoney = prompt("Nhập số tiền gửi");
+    let month = prompt("nhập số tháng gửi tiết kiệm");
+    let lai1 = ((sendmoney * 0.05) / month);
+    let lai2 = ((sendmoney * 0.03) / month);
+    let lai3 = ((sendmoney * 0.02) / month);
+    if (month > 12) {
+        document.write("Tiền lãi tháng này là:" + lai1);
+    } else if (month >= 6) {
+        document.write("Tiền lãi tháng này là:" + lai2);
+    } else document.write("Tiền lãi tháng này là:" + lai3);
+</script>
+</body>
+</html>

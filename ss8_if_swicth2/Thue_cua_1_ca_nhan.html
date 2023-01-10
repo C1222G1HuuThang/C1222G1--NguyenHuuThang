@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuế của 1 cá nhân</title>
+</head>
+<body>
+<script>
+    let thunhap = prompt("Nhâp thu nhập hằng tháng")
+    let Thue1 = (thunhap * 0.05);
+    let Thue2 = (thunhap * 0.1);
+    let Thue3 = (thunhap * 1.5);
+    let Thue4 = (thunhap * 2.0);
+    let Thue5 = (thunhap * 2.5);
+    let Thue6 = (thunhap * 3.0);
+    let Thue7 = (thunhap * 3.5);
+    if (Thue1 <= 5000000) {
+        document.write("Thuế phải trả là:" + Thue1);
+    } else if (Thue2 <= 10000000 && Thue2 > 5000000) {
+        document.write("Thuế phải trả là:" + Thue2);
+    } else if (Thue3 > 10000000 && Thue3 <= 1.000000) {
+        document.write("Thuế phải trả là:" + Thue3);
+    } else if (Thue4 > 18000000 && Thue4 <= 32000000) {
+        document.write("Thuế phải trả là:" + Thue4);
+    } else if (Thue5 > 32000000 && Thue5 <= 52000000) {
+        document.write("Thuế phải trả là:" + Thue5);
+    } else if (Thue6 > 52000000 && Thue6 <= 80000000) {
+        document.write("Thuế phải trả là:" + Thue6);
+    } else document.write("Thuế phải trả là:" + Thue7);
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phương trình bậc 2</title>
+</head>
+<body>
+<script>
+    let a = prompt("nhập a");
+    let b = prompt("nhập b");
+    ``
+    let c = prompt("nhập c");
+    let delta = (b * b) - (4 * a * c);
+    let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+    let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+    let xk = -b / (2 * a);
+    if (delta > 0) {
+        document.write("Phương trình có 2 nghiệm:" + x1 + "và" + x2);
+    } else if (delta < 0) {
+        document.write("Phương trình vô nghiệm");
+    } else document.write("Phương trình có 1 nghiệm kép:" + xk);
+</script>
+</body>
+</html>
