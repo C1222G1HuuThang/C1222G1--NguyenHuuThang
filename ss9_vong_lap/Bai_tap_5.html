@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1 = 1;
+    let number2 = 2;
+    let number3 = 3;
+    let fibonacci = [number1, number2, number3];
+    let sum = 0;
+
+    for (let i = 1; i <= 17; i++) {
+        number1 = number2;
+        number2 = number3;
+        number3 = number1 + number2;
+        fibonacci.push(number3);
+    }
+
+    fibonacci.forEach((item) => {
+        sum += item;
+    });
+    document.write(sum);
+</script>
+</body>
+</html>

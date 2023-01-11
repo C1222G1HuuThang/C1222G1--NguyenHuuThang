@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dãy bonaci</title>
+</head>
+<body>
+<script>
+    let a = 1;
+    let b = 1;
+    let c;
+    let count = 0;
+    while (count < 20) {
+        c = a + b;
+        a = b;
+        b = c;
+        count++;
+        document.writeln("-->" + c)
+    }
+</script>
+</body>
+</html>
