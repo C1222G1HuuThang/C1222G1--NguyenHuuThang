@@ -7,12 +7,16 @@
 <body>
 <script>
 
-    let old=prompt("Nhập tuổi");
-    while (old>100){
-        if (old<100){
-            alert("Tuổi kh chính xác");
-        }old=prompt("yêu cầu nhập lại");
-        else d
+    let a = 1;
+    let b = 1;
+    let c = a + b;
+    let count=0;
+    while (count<50){
+        c=a+b;
+        a=b;
+        b=c;
+        count++;
+        document.write(c);
     }
 </script>
 </body>

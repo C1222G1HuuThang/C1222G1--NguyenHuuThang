@@ -6,20 +6,20 @@
 </head>
 <body>
 <script>
-    let numbers = prompt("Nhập số lượng số nguyên tố : ");
+    let number = prompt("Nhập số lượng số nguyên tố : ");
 
-    function check(numbers) {
+    function check(number) {
         let count = 0;
         let counts = 0;
-        for (let N = 2; N < numbers; N++) {
+        for (let n = 2; n < number; n++) {
             for (let j = 1; j <= N; j++) {
-                if (N % j === 0) {
+                if (n % j === 0) {
                     count += 1;
                 }
             }
             if (count === 2) {
-                document.write((N + "<br>"));
-                counts += 1;
+                document.write((n + "<br>"));
+                count += 1;
             }
             count = 0;
         }
