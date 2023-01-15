@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [5, 7, 34, 23, 75, 36, 98, 25, 56, 45];
+    let max = 0;
+    let index = 0;
+    for (let i = 0; i < 10; i++) {
+        for (let j = 0; j < array.length; j++) {
+            if (max < array[j]) {
+                max = array[j];
+                index++;
+            }
+        }
+    }
+    document.write("Các phần tử trong mảng: " + array + "<br>" + "Giá trị lớn nhất: " + max + "<br>" + "Vị trí: " + index);
+</script>
+</body>
+</html>
